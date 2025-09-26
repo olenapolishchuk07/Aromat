@@ -1,0 +1,132 @@
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Верхнє меню */
+.navbar {
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* Головний блок */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #dcdcdc;
+}
+
+.hero h1 {
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Секція меню */
+.menu-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.menu-section h2 {
+  margin-bottom: 10px;
+}
+
+.menu-section p {
+  margin-bottom: 30px;
+}
+
+/* Сітка для карток */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Картки напоїв */
+.menu-item {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Фото у картках */
+.menu-item img {
+  width: 100%;           /* фото по ширині картки */
+  height: 80px;          /* висота*/
+  object-fit: cover;    
+  background-color: #999;/* сірий фон-заглушка, якщо фото ще нема */
+  margin-bottom: 5px;
+}
+
+/* Назва напою */
+.menu-item span {
+  display: block;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+/* Блок "Про нас" */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.about-text {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+.about-text h1 {
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  text-align: left; 
+}
+
+.about-photo {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #999; 
+}

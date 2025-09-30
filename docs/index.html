@@ -4,158 +4,147 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aromat</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 <body>
   <!-- Верхнє меню -->
   <div class="navbar">
     <div class="logo">Aromat</div>
     <div class="nav-links">
-      <button>Про нас</button>
-      <button>Меню</button>
-      <button>Додаток</button>
-      <button>Зробити замовлення</button>
+      <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Про нас</button>
+      <button onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">Меню</button>
+      <button onclick="document.getElementById('app').scrollIntoView({behavior: 'smooth'})">Додаток</button>
     </div>
   </div>
 
   <!-- Головний блок -->
   <div class="hero">
     <h1>Aromat</h1>
-    <button>Завантажити додаток</button>
+    <button onclick="document.getElementById('app').scrollIntoView({behavior: 'smooth'})">Завантажити додаток</button>
   </div>
 
   <!-- Меню -->
-  <div class="menu-section">
+  <div id="menu" class="menu-section">
     <h2>Меню</h2>
     <!-- Гарячі напої -->
-<p>Гарячі напої</p>
-<div class="menu-grid">
-  <div class="menu-item" data-name="Еспресо" data-img="1.jpg"> <!-- Для фото потібно змінити назву .jpg  -->
-    <img src="1.jpg" alt=" "><!-- Для фото потібно змінити назву .jpg  -->
-    <span>Еспресо</span>
-  </div>
-
-  <div class="menu-item" data-name="Лунго" data-img="lungo.jpg">
-    <img src="lungo.jpg" alt=" ">
-    <span>Лунго</span>
-  </div>
-
-  <div class="menu-item" data-name="Допіо" data-img="dopio.jpg">
-    <img src="dopio.jpg" alt=" ">
-    <span>Допіо</span>
-  </div>
-
-  <div class="menu-item" data-name="Американо" data-img="americano.jpg">
-    <img src="americano.jpg" alt=" ">
-    <span>Американо</span>
-  </div>
-
-  <div class="menu-item" data-name="Лате" data-img="latte.jpg">
-    <img src="latte.jpg" alt=" ">
-    <span>Лате</span>
-  </div>
-
-  <div class="menu-item" data-name="Капучіно" data-img="capuccino.jpg">
-    <img src="capuccino.jpg" alt=" ">
-    <span>Капучіно</span>
-  </div>
-
-  <div class="menu-item" data-name="Флет-вайт" data-img="flatwhite.jpg">
-    <img src="flatwhite.jpg" alt=" ">
-    <span>Флет-вайт</span>
-  </div>
-
-  <div class="menu-item" data-name="Раф" data-img="raf.jpg">
-    <img src="raf.jpg" alt=" ">
-    <span>Раф</span>
-  </div>
-
-  <div class="menu-item" data-name="Гарячий шоколад" data-img="hotchocolate.jpg">
-    <img src="hotchocolate.jpg" alt=" ">
-    <span>Гарячий шоколад</span>
-  </div>
-
-  <div class="menu-item" data-name="Какао" data-img="cacao.jpg">
-    <img src="cacao.jpg" alt=" ">
-    <span>Какао</span>
-  </div>
-
-  <div class="menu-item" data-name="Чай" data-img="tea.jpg">
-    <img src="tea.jpg" alt=" ">
-    <span>Чай</span>
-  </div>
-
-  <div class="menu-item" data-name="Глінтвейн" data-img="">
-    <img src="placeholder.jpg" alt=" ">
-    <span>Глінтвейн</span>
-  </div>
-</div>
-
-
-    <!-- холодні напої -->
-     <p>Холодні напої</p>
+    <p>Гарячі напої</p>
     <div class="menu-grid">
-      <div class="menu-item" data-name="Бамбл" data-img="Назва фото.jpg">
-        <img src="Назва фото.jpg" alt="">
+      <div class="menu-item" data-name="Еспресо" data-img="images/1.jpg">
+        <img src="images/1.jpg" alt="Еспресо">
+        <span>Еспресо</span>
+      </div>
+      <div class="menu-item" data-name="Лунго" data-img="images/lungo.jpg">
+        <img src="images/lungo.jpg" alt="Лунго">
+        <span>Лунго</span>
+      </div>
+      <div class="menu-item" data-name="Допіо" data-img="images/dopio.jpg">
+        <img src="images/dopio.jpg" alt="Допіо">
+        <span>Допіо</span>
+      </div>
+      <div class="menu-item" data-name="Американо" data-img="images/americano.jpg">
+        <img src="images/americano.jpg" alt="Американо">
+        <span>Американо</span>
+      </div>
+      <div class="menu-item" data-name="Лате" data-img="images/latte.jpg">
+        <img src="images/latte.jpg" alt="Лате">
+        <span>Лате</span>
+      </div>
+      <div class="menu-item" data-name="Капучіно" data-img="images/capuccino.jpg">
+        <img src="images/capuccino.jpg" alt="Капучіно">
+        <span>Капучіно</span>
+      </div>
+      <div class="menu-item" data-name="Флет-вайт" data-img="images/flatwhite.jpg">
+        <img src="images/flatwhite.jpg" alt="Флет-вайт">
+        <span>Флет-вайт</span>
+      </div>
+      <div class="menu-item" data-name="Раф" data-img="images/raf.jpg">
+        <img src="images/raf.jpg" alt="Раф">
+        <span>Раф</span>
+      </div>
+      <div class="menu-item" data-name="Гарячий шоколад" data-img="images/hotchocolate.jpg">
+        <img src="images/hotchocolate.jpg" alt="Гарячий шоколад">
+        <span>Гарячий шоколад</span>
+      </div>
+      <div class="menu-item" data-name="Какао" data-img="images/cacao.jpg">
+        <img src="images/cacao.jpg" alt="Какао">
+        <span>Какао</span>
+      </div>
+      <div class="menu-item" data-name="Чай" data-img="images/tea.jpg">
+        <img src="images/tea.jpg" alt="Чай">
+        <span>Чай</span>
+      </div>
+      <div class="menu-item" data-name="Глінтвейн" data-img="images/placeholder.jpg">
+        <img src="images/placeholder.jpg" alt="Глінтвейн">
+        <span>Глінтвейн</span>
+      </div>
+    </div>
+
+    <!-- Холодні напої -->
+    <p>Холодні напої</p>
+    <div class="menu-grid">
+      <div class="menu-item" data-name="Бамбл" data-img="images/orang.jpg">
+        <img src="images/orang.jpg" alt="Бамбл">
         <span>Бамбл</span>
       </div>
-      <div class="menu-item" data-name="Еспресо-тонік" data-img="Назва фото.jpg">
-        <img src="Назва фото.jpg" alt="">
+      <div class="menu-item" data-name="Еспресо-тонік" data-img="images/tonic.jpg">
+        <img src="images/tonic.jpg" alt="Еспресо-тонік">
         <span>Еспресо-тонік</span>
       </div>
-      <div class="menu-item" data-name="Ісе-лате" data-img="Назва фото.jpg">
-        <img src="Назва фото.jpg" alt="">
+      <div class="menu-item" data-name="Ісе-лате" data-img="images/iceLate.jpg">
+        <img src="images/iceLate.jpg" alt="Ісе-лате">
         <span>Ісе-лате</span>
       </div>
-      <div class="menu-item" data-name="Холодний Раф" data-img="Назва фото.jpg">
-        <img src="Назва фото.jpg" alt="">
+      <div class="menu-item" data-name="Холодний Раф" data-img="images/iceRaf.jpg">
+        <img src="images/iceRaf.jpg" alt="Холодний Раф">
         <span>Холодний Раф</span>
       </div>
-      <div class="menu-item" data-name="Ісе-какао" data-img="Назва фото.jpg">
-        <img src="Назва фото.jpg" alt="">
+      <div class="menu-item" data-name="Ісе-какао" data-img="images/iceCacao.jpg">
+        <img src="images/iceCacao.jpg" alt="Ісе-какао">
         <span>Ісе-какао</span>
       </div>
-      <div class="menu-item" data-name="Ісе-tea" data-img="Назва фото.jpg">
-        <img src="Назва фото.jpg" alt="">
+      <div class="menu-item" data-name="Ісе-tea" data-img="images/iceTea.jpg">
+        <img src="images/iceTea.jpg" alt="Ісе-tea">
         <span>Ісе-tea</span>
       </div>
     </div>
   </div>
 
-<!-- Про нас -->
-<div class="about-section">
-  <div class="about-text">
-    <h1>Про нас</h1>
-    <p>
-      У кафе «Аромат» ми віримо, що кава – це більше, ніж напій. Це маленький ритуал, що дарує тепло, натхнення та нові зустрічі.
-      Ми створили простір, де можна насолодитися свіжозвареною кавою, ароматною випічкою та спокоєм у самому центрі міста.
-      Наші бариста готують каву з любов’ю, щоб кожна чашка приносила радість і гармонію у ваш день.
-      Кава, яка сильніша за понеділок і ароматніша за будь-який будильник. Це місце, де латте завжди виходить фотогенічним.
-      Зайди – і твій день стане трошки смачнішим.
-    </p>
+  <!-- Про нас -->
+  <div id="about" class="about-section">
+    <div class="about-text">
+      <h1>Про нас</h1>
+      <p>
+        У кафе «Аромат» ми віримо, що кава – це більше, ніж напій. Це маленький ритуал, що дарує тепло, натхнення та нові зустрічі.
+        Ми створили простір, де можна насолодитися свіжозвареною кавою, ароматною випічкою та спокоєм у самому центрі міста.
+        Наші бариста готують каву з любов’ю, щоб кожна чашка приносила радість і гармонію у ваш день.
+        Кава, яка сильніша за понеділок і ароматніша за будь-який будильник. Це місце, де латте завжди виходить фотогенічним.
+        Зайди – і твій день стане трошки смачнішим.
+      </p>
+    </div>
+    <div class="about-photo">
+  <img src="images/about.jpg" alt="Про нас">
+    </div>
   </div>
-  <div class="about-photo">
-    <img src="Назва фото.jpg" alt="">
-  </div>
-</div>
 
- <!-- Блок «Завантаж додаток» -->
-  <section class="download-app">
+  <!-- Блок «Завантаж додаток» -->
+  <section id="app" class="download-app">
     <h2>Завантажуй наш додаток та отримуй бонуси за кожну каву!</h2>
     <button class="download-btn">Завантажити додаток</button>
 
+    <br><br>
+
     <div class="app-images">
-      <div class="app-item"><img src="app1.jpg" alt=""></div>
-      <div class="app-item"><img src="app2.jpg" alt=""></div>
-      <div class="app-item"><img src="app3.jpg" alt=""></div>
-      <div class="app-item"><img src="app4.jpg" alt=""></div>
+  <div class="app-item"><img src="images/app1.jpg" alt="App screen 1"></div>
+  <div class="app-item"><img src="images/app2.jpg" alt="App screen 2"></div>
+  <div class="app-item"><img src="images/app3.jpg" alt="App screen 3"></div>
+  <div class="app-item"><img src="images/app4.jpg" alt="App screen 4"></div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-left">
-      <img src="logo.png" alt="Aromat" class="footer-logo">
       <p><a href="tel:+380671234567">+380 (067) 123-45-67</a></p>
       <p><a href="mailto:aromatKava@gmail.com">aromatKava@gmail.com</a></p>
     </div>
@@ -163,39 +152,43 @@
     <div class="footer-middle">
       <p>Слідкуйте за нами:</p>
       <ul class="socials">
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Telegram</a></li>
-        <li><a href="#">TikTok</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">TikTok</a></li>
       </ul>
     </div>
 
     <div class="footer-right">
       <p>Завантажити додаток:</p>
       <div class="store-buttons">
-        <img src="google-play.png" alt="Google Play">
-        <img src="apple-store.png" alt="Apple Store">
+  <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/google-play.png" alt="Google Play"></a>
+  <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/apple-store.png" alt="Apple Store"></a>
       </div>
     </div>
   </footer>
 
   <!-- Модальне вікно -->
-<div id="popup" class="popup">
+  <div id="popup" class="popup">
+    <div class="popup-content">
+  <span class="close" role="button" aria-label="Закрити" tabindex="0">&times;</span>
+      <div class="image-frame" id="popup-image-frame"></div>
+      <div class="popup-info">
+        <h2 id="popup-name"></h2>
+        <div class="sizes" id="popup-sizes"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Popup для додатку -->
+<div id="app-popup" class="popup">
   <div class="popup-content">
-    <span class="close">&times;</span>
-
-<div class="popup-content">
-  <!-- Ліва колонка -->
-  <div class="image-frame" id="popup-image-frame"></div>
-
-  <!-- Права колонка -->
-  <div class="popup-info">
-    <h2 id="popup-name"></h2>
-    <div class="sizes" id="popup-sizes"></div>
-    <button class="add-btn">Додати до замовлення</button>
+  <span class="close" role="button" aria-label="Закрити" tabindex="0">&times;</span>
+    <div class="popup-info" style="text-align:center; width:100%;">
+      <h2>Додаток в розробці</h2>
+    </div>
   </div>
 </div>
-
-  <script src="js/script.js"></script>
 </body>
 </html>

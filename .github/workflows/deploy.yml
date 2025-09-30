@@ -1,4 +1,4 @@
-name: Deploy Frontend to GitHub Pages
+name: Deploy docs to GitHub Pages
 
 on:
   push:
@@ -17,4 +17,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./frontend
+        publish_dir: ./docs
